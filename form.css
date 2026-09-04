@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    color: #333;
+}
+
+/* Khung chính */
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+/* Form */
+.form {
+    background-color: white;
+    padding: 35px 45px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Tiêu đề */
+.form h1 {
+    text-align: center;
+    color: #1677ff;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Khoảng cách giữa các phần */
+.form > div {
+    margin-bottom: 20px;
+}
+
+/* Label */
+.form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Ô nhập text */
+.form input[type="text"],
+.form input[type="password"],
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #d6dce5;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Khi click vào ô nhập */
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form select:focus,
+.form textarea:focus {
+    border-color: #1677ff;
+    box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.12);
+}
+
+/* Textarea */
+.form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Checkbox */
+.form input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #1677ff;
+    cursor: pointer;
+}
+
+/* Radio */
+.form input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #1677ff;
+    cursor: pointer;
+}
+
+/* File */
+.form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px dashed #b8c2d1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    cursor: pointer;
+}
+
+/* Nút */
+.form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1677ff, #005bea);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hiệu ứng khi đưa chuột vào nút */
+.form button:hover {
+    background: linear-gradient(135deg, #005bea, #0041b8);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 91, 234, 0.3);
+}
